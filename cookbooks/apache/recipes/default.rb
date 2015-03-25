@@ -8,6 +8,7 @@ apache_name = "httpd"
 
 case node["platform"]
 when "ubuntu"
+  include_recipe "apt::default"
   apache_name = "apache2"
 end
 
